@@ -1,0 +1,797 @@
+/*!
+ * Hoja de estilos personalizada para Avicola Lujan
+ * Copyright 2016 - MyDesign (http://www.mydesign.com.ar)
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,400);
+
+body {
+	padding-top: 51px;
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #1C1C1A;
+}
+
+hr {
+	margin: 35px 0;
+	border-top: 1px solid #dadada;
+}
+
+#titulo_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo_header {
+	margin-top: -10px;	
+}
+
+.location-header {
+	color: #fafafa;
+	text-decoration: none;
+}
+
+.location-header:hover {
+	color: #fafafa;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.location-header li {
+	margin-top: 10px;
+}
+
+h1 {
+	margin: 91px 0 33px;
+	font-size: 35px;
+	font-weight: 100;
+}
+
+.presentacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.redondos_container {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.redondos {
+	transition: transform 1s; 
+	height: 300px;
+	width: 300px;
+	filter: grayscale(0%);
+}
+
+.redondos_titulo {
+	visibility: hidden;
+	font-weight: bolder;
+	color: #fafafa;
+	text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.redondos:hover + .redondos_titulo {
+	visibility: visible;
+	transition: transform 1s;
+	transform: scale(1.1);
+	animation: floatup 1s forwards;
+}
+
+
+@keyframes floatup {
+	from {transform: translateY(0px);}
+	to {transform: translateY(-200px) scale(1.1); }
+  }
+
+
+
+.redondos:hover {
+	transform: scale(1.1);
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(100%);
+}
+
+.spacer {
+	clear: both;
+	height: 80px;
+}
+
+.img-responsive {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-fixed-top {
+	background: #282828;
+}
+
+.nav>li>a {
+	font-weight: 100;
+	font-size: 20px;
+	color: #fff;
+}
+
+.nav>li:hover>a,
+.nav>li.active>a {
+	background: #a93432;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-brand {
+	padding: 16px 0 0 12px;
+}
+
+.btn {
+	border: 0;
+	border-radius: 0;
+	font-size: 24px;
+}
+
+.btn-primary {
+	padding: 15px 40px;
+	background: #a93432;
+	color: #fff;
+}
+
+.btn-primary:hover {
+	background: #fff;
+	color: #a93432;
+}
+
+.btn-primary.inverted {
+	background: #fff;
+	color: #a93432;
+}
+
+.btn-primary.inverted:hover {
+	background: #a93432;
+	color: #fff;
+}
+
+.top-home {
+	background: url(../img/AvicolaLujan-Home-FondoHeader.jpg) top center no-repeat;
+	background-size: 100% auto;
+}
+
+.top-home h1 {
+	margin: 20px 0;
+	line-height: 1.3;
+	font-family: 'Roboto Slab';
+	font-weight: 100;
+	font-size: 45px;
+}
+
+.top-home h1 strong {
+	font-weight: 400;
+}
+
+.content-home {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background: #282828;
+	text-align: center;
+	color: #fff;
+}
+
+.content-home h1 {
+	margin: 50px 0;
+}
+
+.content-home p {
+	margin: 30px 0 27px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.content-vision {
+	background: #5b5b5b;
+	text-align: center;
+	color: #fff;
+	padding-top: 50px;
+}
+
+.content-vision h1 {
+	margin: 12px 0;
+}
+
+.content-vision p {
+	margin: 27px 0 61px;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+.content-vision .ilustracion {
+	margin: 25px auto 74px;
+}
+
+.content-productos {
+	padding-bottom: 50px;
+}
+
+#conocenos {
+	margin-top: 50px;
+}
+
+.producto .thumb {
+	margin-bottom: 22px;
+}
+
+.thumb:hover {
+	transform: scale(1.2);
+}
+
+.producto .title {
+	width: 60%;
+	margin: 0 auto 30px;
+	border: 1px solid #a93432;
+	border-width: 1px 0;
+	line-height: 47px;
+	font-size: 22px;
+}
+
+.producto .description {
+    width: 60%;
+    height: 130px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a93432;
+    font-weight: 300;
+	font-size: 14px;
+}
+
+.producto .btn {
+	background: #fff;
+	border: 1px solid #343031;
+	font-size: 23px;
+	color: #1C1C1A;
+}
+
+.producto .btn:hover {
+	background: #a93432;
+	border-color: #a93432;
+	color: #fff;
+}
+
+.float{
+	position:fixed;
+	width:80px;
+	height:80px;
+	bottom:50px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:50px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:15px;
+}
+
+
+
+.content-vender {
+	padding: 67px 0;
+	background: #AA3432;
+	color: #fff;
+}
+
+.content-vender h1 {
+	margin: 0 0 40px;
+	text-align: center;
+}
+
+.control-label {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.btn-submit {
+	float: right;
+	width: 165px;
+	height: 52px;
+	margin-top: 15px;
+	margin-right: 30px;
+	padding: 0;
+	background: #282828;
+	line-height: 52px;
+	font-size: 18px;
+}
+
+.btn-submit:hover {
+	background: #fff;
+	color: #a93432;
+}
+
+.background-calidad,
+.background-establecimiento,
+.background-nosotros,
+.background-productos-categorias {
+	padding-top: 93px;
+	background: #585858;
+	line-height: 17px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.background-calidad {
+	padding-bottom: 110px;
+}
+
+.background-productos-categorias {
+	padding-bottom: 150px;
+	background: #585858 url(../img/AvicolaLujan-Calidad-PlatoFondo.png) 810px 680px no-repeat;
+}
+
+.background-productos-categorias .logo-avicola,
+.background-productos .logo-avicola {
+	margin-bottom: 80px;
+}
+
+.background-productos-categorias h4,
+.background-productos h4 {
+	font-size: 22px;
+	font-weight: 300;
+}
+
+.producto-categoria .btn {
+	background: transparent;
+	border: 1px solid #fff;
+	font-size: 22px;
+	color: #fff;
+}
+
+.producto-categoria .btn:hover {
+	background: #a93432;
+	border-color: #fff;
+	color: #fff;
+}
+
+.background-calidad h1,
+.background-establecimiento h1,
+.background-nosotros h1,
+.background-productos-categorias h1 {
+	margin-bottom: 25px;
+	font-family: 'Roboto Slab';
+	line-height: 54px;
+	font-weight: 100;
+	font-size: 44px;
+}
+
+.background-calidad h1 strong,
+.background-productos-categorias h1 strong {
+	font-weight: 400;
+}
+
+.background-establecimiento h1 {
+	margin-top: 60px;
+}
+
+.background-calidad p.lead,
+.background-establecimiento p.lead,
+.background-nosotros p.lead {
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 23px;
+}
+
+.background-calidad p.lead,
+.background-nosotros p.lead {
+	margin-bottom: 128px;
+}
+
+.nosotros {
+	padding-bottom: 50px;
+}
+
+.proceso-calidad h2,
+.establecimiento h2,
+.nosotros h2,
+.background-productos-categorias h2 {
+	font-size: 35px;
+	font-weight: 100;
+}
+
+.proceso-calidad .certificacion {
+	padding-top: 89px;
+}
+
+.category-title a {
+	text-decoration: none;
+	color: #1C1C1A;
+}
+
+.background-productos-categorias .category-title a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.category-title a.active {
+	font-weight: 400;
+	color: #a73432;
+}
+
+ul.categorias {
+	margin-bottom: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+ul.categorias li {
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+ul.categorias li a {
+	color: #1C1C1A;
+}
+
+ul.categorias li a:hover {
+	text-decoration: none;
+	color: #a73432;
+}
+
+.background-productos-categorias ul.categorias li a {
+	color: #fff;
+}
+
+.background-productos-categorias ul.categorias li a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.background-productos {
+	padding-top: 93px;
+	padding-bottom: 80px;
+	border-bottom: 2px solid #585858;
+}
+
+.productos-preview {
+	padding-top: 115px;
+	text-align: center;
+}
+
+.productos-preview .item {
+	margin-bottom: 86px;
+}
+
+.productos-preview .item>img {
+	margin-bottom: 44px;
+}
+
+.productos-preview .item .title {
+	display: block;
+	min-height: 77px;
+	margin-bottom: 23px;
+	padding: 12px 0; 
+	border: 1px solid #a73432;
+	border-width: 1px 0;
+	line-height: 1.2;
+	font-size: 20px;
+}
+
+.productos-preview .item .title.extra {
+	min-height: 98px;
+}
+
+.productos-preview .item .content {
+	display: none;
+}
+
+.modal-header {
+	padding-left: 210px;
+	background: #383838 url(../img/AvicolaLujan-Home-Logo-Scroll.png) 15px 16px no-repeat;
+	color: #fff;
+}
+
+.modal-header .close {
+	color: #fff;
+    font-size: 26px;
+    opacity: .4;
+}
+
+.modal-content .product-content {
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.modal-content .product-image {
+	/*padding: 50px 0;*/
+}
+
+.productos-preview .item .btn {
+	width: 100%;
+	height: 52px;
+	padding: 0;
+	background: #fff;
+	border: 1px solid #a73432;
+	line-height: 52px;
+	font-size: 23px;
+	color: #a73432;
+}
+
+.productos-preview .item .btn:hover {
+	background: #a73432;
+	color: #fff;
+}
+
+.table>tbody>tr>td {
+	padding: 6px;
+	font-size: 12px;
+}
+
+.rojo {
+	color: #a73432;
+}
+
+.verde {
+	color: #1C9437;
+}
+
+.cursiva {
+	font-family: serif;
+	font-style: italic;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #a73432;
+    border-color: #a73432;
+}
+
+.subtitle {
+	color: #AA3432;
+}
+
+#footer {
+	padding: 52px 0;
+	font-size: 18px;
+	color: #666;
+}
+
+
+#map-footer {
+	width: 100%;
+	height: 370px;
+}
+
+#footer .logo-footer {
+	margin-top: 40px;
+}
+
+#footer h2 {
+	position: relative;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+#footer .icon {
+	position: absolute;
+	top: 3px; left: -70px;
+}
+
+.datos_contacto {
+	margin-top: 5%;
+}
+
+.whatsapp_icon {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+}
+
+.numero_celular {
+	margin-bottom: 10px;
+}
+
+.logo_contacto {
+	margin-top: 35%!important;
+}
+
+#footer .btn-primary {
+	width: 100%;
+	height: 48px;
+	padding: 0;
+	line-height: 48px;
+	font-size: 18px;
+}
+
+#footer .btn-primary:hover,
+.modal-footer .btn:hover {
+	background: #282828;
+	color: #fff;
+}
+
+.modal-footer .btn {
+	height: 48px;
+	padding: 0 20px;
+	line-height: 48px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.btn-cancel {
+	height: 40px;
+	padding: 0 20px;
+	background: #999;
+	line-height: 40px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.mydesign {
+	padding: 10px 0;
+	background: #505050;
+	text-align: right;
+	font-size: 14px;
+}
+
+.mydesign a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.xs-center {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	body {
+		padding-top: 58px;
+	}
+	.navbar-nav>li>a {
+	    padding-top: 19px;
+	    padding-bottom: 19px;
+	}
+	.xs-center {
+		text-align: inherit;
+	}
+	.proceso-calidad {
+		background: url(../img/timeline-min.png) top center no-repeat;
+	}
+	.proceso-calidad h2 {
+		margin: 0 0 19px;
+	}
+	.proceso-calidad .recepcion {
+		position: relative;
+		height: 466px;
+		padding-top: 204px;
+	}
+	.proceso-calidad .recepcion .img-hover {
+		position: absolute;
+		top: 40px; left: -360px;
+	}
+	.proceso-calidad .inicio {
+		position: relative;
+		height: 345px;
+		padding-top: 5px;
+	}
+	.proceso-calidad .inicio .img-hover {
+		position: absolute;
+		top: 40px; left: -350px;
+	}
+	.proceso-calidad .cria {
+		position: relative;
+		height: 448px;
+	    padding-top: 10px;
+	}
+	.proceso-calidad .cria .img-hover {
+		position: absolute;
+		top: 50px; left: -370px;
+	}
+	.proceso-calidad .terminacion {
+		position: relative;
+		height: 525px;
+		padding-top: 10px;
+	}
+	.proceso-calidad .terminacion .img-hover {
+		position: absolute;
+		top: 230px; left: -180px;
+	}
+	.proceso-calidad .logistica {
+		position: relative;
+		height: 542px;
+		padding-top: 112px;
+		text-align: right;
+	}
+	.proceso-calidad .logistica .img-hover {
+		position: absolute;
+		top: 220px; left: -10px;
+	}
+	.establecimiento {
+		padding-top: 600px;
+		background: url(../img/establecimiento-min.png) top center no-repeat;
+	}
+	.establecimiento .fabrica {
+		position: relative;
+	    height: 470px;
+	}
+	.establecimiento .fabrica .img-hover {
+		position: absolute;
+		top: -310px; left: -130px;
+	}
+	.establecimiento .cria {
+	    height: 310px;
+	}
+	.establecimiento .cria .img-hover {
+		position: absolute;
+		top: -290px; left: -70px;
+	}
+	.establecimiento .planta {
+		position: relative;
+	    height: 510px;
+	}
+	.establecimiento .planta .img-hover {
+		position: absolute;
+		top: 0; left: -680px;
+	}
+	.establecimiento .granjas {
+	    height: 320px;
+	}
+	.establecimiento .garantia {
+	    height: 296px;
+	    text-align: right;
+	}
+	.nosotros {
+		background: url(../img/nosotros-min.png) top center no-repeat;
+	}
+	.nosotros .primeros-pasos {
+		position: relative;
+		padding-top: 385px;
+		height: 825px;
+	}
+	.nosotros .primeros-pasos .img-hover {
+		position: absolute;
+		top: 0; left: -300px;
+	}
+	.nosotros .i-dream-a-dream {
+		position: relative;
+		height: 472px;
+		text-align: right;
+	}
+	.nosotros .i-dream-a-dream .img-hover {
+		position: absolute;
+		top: 130px; left: 720px;
+	}
+	.nosotros .avicola {
+		position: relative;
+		height: 700px;
+	}
+	.nosotros .avicola .img-hover {
+		position: absolute;
+		top: 30px; left: -500px;
+	}
+	.background-productos {
+		background: #fff url(../img/AvicolaLujan-Calidad-PlatoFondo-Footer.png) -410px 1150px no-repeat;
+	}
+	.background-productos.bg2 {
+		padding-bottom: 100px;
+		background-image: url(../img/AvicolaLujan-Establecimiento-PlatoFondo-Footer.png);
+	}
+	.modal-lg {
+		width: 80%;
+	    max-width: 940px;
+	}
+}
